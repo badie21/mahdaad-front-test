@@ -1,17 +1,23 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="flex flex-col h-screen">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4">
+      Header
+    </header>
+
+    <!-- Scrollable Content -->
+    <main class="flex-1 overflow-y-auto p-4 bg-gray-100">
+      <!-- Long content here -->
+      <div class="h-[2000px] bg-white rounded shadow p-4">
+        Scrollable Content
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4">
+      Footer
+    </footer>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
